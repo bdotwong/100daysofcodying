@@ -1,0 +1,62 @@
+from art import logo, vs
+from game_data import data
+import random
+
+# Generate a random account from the game data.
+#print(logo)
+#print(vs)
+# Format account data into printable format.
+# print(f'{name}: {account["follower_count"]}')
+def get_account():
+    i = random.randint(0, len(data)-1)
+    name = data[i]["name"]
+    followers = data[i]["follower_count"]
+    description = data[i]["description"]
+    country = data[i]["country"]
+    #print(f'{name}: {followers}')
+    return data[i]
+
+person_a = get_account()
+#game_over = True
+#while game_over == True:
+
+    while 1:
+        person_b = get_account()
+        if person_b != person_a:
+            break
+
+    def print_account(person):
+        print(f'{person["name"]} : {person["follower_count"]}')
+
+    print_account(person_a)
+    print_account(person_b)
+
+    print(f"Who has more followers? {person_a} or {person_b}")
+
+
+
+
+
+#print(f'{name}: {account["follower_count"]}')
+
+# Ask user for a guess.
+#answer = input("Who has more followers, 'A' or 'B'? \n").lower
+# Check if user is correct.
+
+
+## Get follower count.
+
+## If Statement
+
+# Feedback.
+
+# Score Keeping.
+score = 0
+
+# Make game repeatable.
+
+# Make B become the next A.
+
+# Add art.
+
+# Clear screen between rounds.
