@@ -76,8 +76,7 @@ while machine_on:
     choice = input("What would you like to drink 'espresso', 'latte', or 'Cappacino'? \n")
     if choice == "off":
         print("Turning off")
-        is_on = False
-        break
+        machine_on = False
     elif choice == "report":
         get_report()
     else:
